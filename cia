@@ -1,0 +1,358 @@
+#!/bin/bash
+# 01001000 01000001 01011000 00110100 01000011 01001000 01010010 01001001 01010011 01010100 
+# script by D3D_M4N
+# tools that a CIA Agent would use
+# this was designed for a parrotsec machine with the following packages
+#	aircrack-ng suite | h8mail | kismet | sparta | owasp-zap | firefox | nmap | xterm | armitage | wig 
+#these are the sites:
+#   https://www.aircrack-ng.org/   https://github.com/khast3x/h8mail   https://www.kismetwireless.net/  
+#   https://sparta.secforce.com/   https://www.zaproxy.org/    https://nmap.org/   
+#   https://www.offensive-security.com/metasploit-unleashed/armitage/
+echo "connecting to CIA Langley Servers..."
+sleep 5
+clear
+echo "    ##########    ######           ###"
+echo "  ##                ##            ## ##"
+echo " ##                 ##           ##   ##"
+echo " ##                 ##          ##     ##"
+echo " ##                 ##         ##       ##"
+echo " ##                 ##        #############"
+echo " ##                 ##       ##           ##"
+echo "  ##                ##      ##             ##"
+echo "   ##               ##     ##               ##"
+echo "    ##########    ######  ##                 ##"
+echo " CIA Hacking Tool ------------------------- V2.1 "
+sleep 3
+clear 
+echo "------------------------------------------------------------------------------------------------";
+echo "-                                                                                              -";
+echo " ██████╗    ██╗     █████╗     ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     ";
+echo "██╔════╝    ██║    ██╔══██╗    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     ";
+echo "██║         ██║    ███████║       ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     ";
+echo "██║         ██║    ██╔══██║       ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     ";
+echo "╚██████╗    ██║    ██║  ██║       ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗";
+echo " ╚═════╝    ╚═╝    ╚═╝  ╚═╝       ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝";
+echo "                                                                                                ";
+echo "                                 CIA Terminal -  version 2.1                                    ";
+echo "------------------------------------------------------------------------------------------------";
+echo "People Hacking"
+echo " h. help"
+echo " i. Info"
+echo " 0. New ID"
+echo " 1. Name Search "
+echo " 2. Phone Search "
+echo " 3. E-Mail Search "
+echo " 4. License Plate Search "
+echo " 5. VIN Search"
+echo "Dev on LAN Hacking"
+echo " 6. Project 1916118201 (Sparta)"
+echo " 7. Project 152311916 (OWASP-ZAP)" 
+echo " 8. Project 11813920175 (Armitage)"
+echo "Website hacking"
+echo " 9. WH11808-Multi scan"
+echo "Networks/WiFi"
+echo "10. Strategic Subnet scan (subnet)"
+echo "11. Kismet Reconnaissance Module"
+echo "12. DeAuthentication Attack"
+echo "Dev"
+echo "13. Router"
+echo "14. Computer"
+read ch
+clear
+if [ "$ch" = "1" ]
+then
+	echo "Enter Name (ex: john-doe)"
+	read n
+	clear
+	echo "Enter State Initials (ex: dc)" 
+	read s
+	echo "Enter City (ex: townsville)" 
+	read c
+	clear
+	echo " #####     ####        ####  ##       ##"
+	echo " ##  ##    ## ##      ## ##  ##       ##"
+	echo " ##   ##   ##  ##    ##  ##  ##       ##"
+	echo " ##    ##  ##   ##  ##   ##  ##       ##"
+	echo " ##    ##  ##    ####    ##  ##       ##"
+	echo " ##    ##  ##     ##     ##   ##     ##"
+	echo " ##   ##   ##            ##    ##   ##"
+	echo " ##  ##    ##            ##     ## ## "
+	echo " #####     ##            ##      ###"
+	echo connecting to the DMV DataBase...
+	sleep 4
+	clear
+	echo "Done!";
+	sleep 2
+	clear
+	firefox www.fastpeoplesearch.com/name/$n-$c-$s &
+	firefox www.searchpeoplefree.com/find/$n/$s/$c &
+#	firefox www.peoplesearchnow.com/person/$n_$c_$s
+	firefox www.truepeoplesearch.com/results?name=$n&citystatezip=$c,$s &
+	firefox www.spokeo.com/$n?loaded=1 &
+
+fi
+
+if [ "$ch" = "2" ]
+then 
+    echo "Enter Phone Number (ex: 123-456-7890)" 
+	read p
+	clear
+	echo " #####     ####        ####  ##       ##"
+	echo " ##  ##    ## ##      ## ##  ##       ##"
+	echo " ##   ##   ##  ##    ##  ##  ##       ##"
+	echo " ##    ##  ##   ##  ##   ##  ##       ##"
+	echo " ##    ##  ##    ####    ##  ##       ##"
+	echo " ##    ##  ##     ##     ##   ##     ##"
+	echo " ##   ##   ##            ##    ##   ##"
+	echo " ##  ##    ##            ##     ## ## "
+	echo " #####     ##            ##      ###"
+	echo connecting to the DMV DataBase...
+	sleep 4
+	clear
+	echo "Done!";
+	sleep 2
+	clear
+	firefox www.fastpeoplesearch.com/$p &
+	firefox www.searchpeoplefree.com/phone-lookup/$p &
+#	firefox www.peoplesearchnow.com/phone/%p%
+	firefox www.whitepages.com/phone/1-$p &
+	firefox www.thatsthem.com/phone/$p &
+	firefox https://duckduckgo.com/?q=$p &
+
+
+fi
+
+if [ "$ch" = "3" ]
+then 
+    echo "Enter E-Mail (ex: 12345@example.com)" 
+	read em
+	clear
+	echo "connecting to the Google-mail DataBase..."
+	sleep 2
+	echo "connecting to the Microsoft-mail DataBase..."
+	sleep 2
+	echo "connecting to the Apple-mail DataBase..."
+	sleep 2
+	echo "Done!";
+	sleep 2
+	clear
+	h8mail -t $em
+	sleep 10
+	firefox www.skymem.info/srch?q=$em&ss=home &
+	firefox www.melissa.com/v2/lookups/emailcheck/email/?email=$em&site= &
+	firefox https://duckduckgo.com/?q=$em &
+	firefox https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar &
+ fi
+
+if [ "$ch" = "4" ]
+then 
+    echo "Enter License Plate (ex: 1abc234)" 
+	read lic
+	clear
+	echo "Enter State Initials" 
+	read s
+	clear
+	echo " #####     ####        ####  ##       ##"
+	echo " ##  ##    ## ##      ## ##  ##       ##"
+	echo " ##   ##   ##  ##    ##  ##  ##       ##"
+	echo " ##    ##  ##   ##  ##   ##  ##       ##"
+	echo " ##    ##  ##    ####    ##  ##       ##"
+	echo " ##    ##  ##     ##     ##   ##     ##"
+	echo " ##   ##   ##            ##    ##   ##"
+	echo " ##  ##    ##            ##     ## ## "
+	echo " #####     ##            ##      ###"
+	echo connecting to the DMV DataBase...
+	sleep 4
+	clear
+	echo "Done!";
+	sleep 2
+	clear
+	firefox www.faxvin.com/license-plate-lookup/result?plate=$lic&state=$s &
+	firefox www.findbyplate.com/US/$s/$lic/ &
+fi
+
+if [ "$ch" = "5" ]
+then 
+    echo "Enter VIN (Vehicle Id Number)" 
+	read vin
+	clear
+	echo " #####     ####        ####  ##       ##"
+	echo " ##  ##    ## ##      ## ##  ##       ##"
+	echo " ##   ##   ##  ##    ##  ##  ##       ##"
+	echo " ##    ##  ##   ##  ##   ##  ##       ##"
+	echo " ##    ##  ##    ####    ##  ##       ##"
+	echo " ##    ##  ##     ##     ##   ##     ##"
+	echo " ##   ##   ##            ##    ##   ##"
+	echo " ##  ##    ##            ##     ## ## "
+	echo " #####     ##            ##      ###"
+	echo connecting to the DMV DataBase...
+	sleep 4
+	clear
+	echo "Done!";
+	sleep 2
+	clear
+	firefox www.vehiclehistory.com/vin-report/$vin &
+	firefox www.vindecoderz.com/EN/check-lookup/$vin &
+fi
+
+if [ "$ch" = "6" ]
+then 
+    sudo sparta
+fi
+
+if [ "$ch" = "7" ]
+then 
+	owasp-zap
+fi
+
+
+if [ "$ch" = "8" ]
+then 
+	armitage
+fi
+
+if [ "$ch" = "9" ]
+then 
+	echo enter website or IP 
+	read ip
+	sudo wig $ip -v
+	sleep 5
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	nmap -v $ip 
+	sleep 5
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	sudo nmap -v -sS
+	sleep 5
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	sudo nmap -sS -A -T4 -p1-65535 -v  $ip 
+fi
+	
+	
+if [ "$ch" = "10" ]
+then	
+	echo "enter subnet (192.168.0.1/24)"
+	read sub
+	sudo nmap $sub
+	
+fi
+ if [ "$ch" = "11" ]
+ then
+	ip a
+	echo "enter wireless iface"
+	read iface
+	sudo iwconfig $iface mode monitor
+	sudo kismet $iface
+fi
+
+if [ "$ch" = "12" ]
+then
+	ip a
+	echo "--Enter IFace---"
+	read iface 
+	clear
+	sudo airmon-ng start $iface
+	clear
+	sudo airodump-ng $iface 
+	echo "---Enter BSSID to Attack---" 
+	read bssid
+	clear
+	echo "---Enter Channel---" 
+	read channel
+	sudo airodump-ng $iface --channel $channel
+	xterm -e sudo airodump-ng $iface --channel $channel &
+	sudo aireplay-ng --deauth 0 -a $bssid $iface 
+fi
+
+if [ "$ch" = "13" ]
+then 
+	ifconfig
+	echo "enter router ip"
+	read ip
+	nmap -sS $ip
+	sleep 8
+	nmap -p 21,22,23,80,443,8080,2121,2222,2323 -sS 
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	nmap $ip 
+	sleep 5
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	echo ---------------------
+	sudo nmap -sS -A -T4 -p1-65535 -v  $ip 
+	sudo uniscan-gui &
+fi	
+
+if [ "$ch" = "14" ] 
+then 
+	echo "enter computer ip"
+	read ip
+	clear
+	echo Lets try to wiggle a stealth scan in there...
+	sleep 5
+	clear 
+	nmap -sS $ip
+	echo --------------------
+	echo --------------------
+	echo --------------------
+    echo lets now try a mixer scan 
+    nmap -sS $ip
+    nmap -sT $ip
+    nmap -sA $ip
+    nmap -sW $ip
+    nmap -sM $ip
+fi
+
+if [ "$ch" = "0" ] 
+then 
+	firefox https://www.fakenamegenerator.com/gen-male-us-us.php &
+fi
+if [ "$ch" = "i" ] 
+then 
+	echo "Script made by D3D_M4N"
+	echo "Script in the 2nd Version"
+	echo "This script was more focused on the Hacking Aspect"
+	echo "This script was made for a Parrot Security OS"
+	echo "Thank for the people who starred me on github"
+	echo "           Have a nice day                    "
+	echo "01001000 01000001 01011000 00110100 01000011 "
+	echo "01001000 01010010 01001001 01010011 01010100 "
+	
+fi
+
+if [ "$ch" = "h" ]
+then
+echo " h. help - this help index"
+echo " i. Info - information about this tool"
+echo " 0. New ID - get a new identity with fake name gen"
+echo " 1. Name Search - search any adult US citizen"
+echo " 2. Phone Search - search anny US phone number"
+echo " 3. E-Mail Search - Email search mixed with h8mail"
+echo " 4. License Plate Search - US License plate search"
+echo " 5. VIN Search - Vehicle Identification number (VIN) search tool"
+echo " 6. Project 1916118201 (Sparta) - launches Sparta GUI"
+echo " 7. Project 152311916 (OWASP-ZAP) - launches OWASP-ZAP GUI" 
+echo " 8. Project 11813920175 (Armitage) - launches Armitage"
+echo " 9. WH11808-Multi scan - mix of wig/nmap/nmap stealth scan"
+echo "10. Strategic Subnet scan (subnet) - easy interface for nmap subnet scanning"
+echo "11. Kismet Reconnaissance Module - launches kismet"
+echo "12. DeAuthentication Attack - airmon-ng/airodump-ng/aireplay-ng deauth tool to kick people off wifi"
+echo "13. Router - router attack"
+echo "14. Computer - pc attack"
+fi
