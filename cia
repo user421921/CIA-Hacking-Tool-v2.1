@@ -57,8 +57,25 @@ echo "12. DeAuthentication Attack"
 echo "Dev"
 echo "13. Router"
 echo "14. Computer"
+echo "Misc"
+echo "15. Install Tools Needed"
 read ch
 clear
+
+if [ "$ch" = "15" ]
+then 
+	sudo apt install aircrack-ng kismet zaproxy firefox nmap xterm armitage wig python3-pip python3-sqlalchemy python3-pyqt5 wkhtmltopdf hydra cutycapt ldap-utils rwho rsh-client x11-apps finger
+	sudo pip install h8mail
+	#sparta install
+	cd /usr/share/
+	git clone https://github.com/secforce/sparta.git
+	cp /sparta/sparta /usr/bin/sparta
+	chmod +x /usr/bin/sparta
+fi
+
+
+
+
 if [ "$ch" = "1" ]
 then
 	echo "Enter Name (ex: john-doe)"
