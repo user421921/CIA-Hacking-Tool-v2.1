@@ -69,7 +69,7 @@ then
 	#sparta install
 	cd /usr/share/
 	git clone https://github.com/secforce/sparta.git
-	cp /sparta/sparta /usr/bin/sparta
+	cp /usr/share/sparta/sparta /usr/bin/sparta
 	chmod +x /usr/bin/sparta
 fi
 
